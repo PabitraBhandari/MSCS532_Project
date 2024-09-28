@@ -1,3 +1,13 @@
+""" 
+This code defines a SkipList data structure to efficiently manage an ordered list of vehicle license plates, 
+supporting insertion, deletion, and search operations. The SkipList is built using multiple levels, where each 
+level provides increasingly sparse links to speed up search operations. The insert method adds a vehicle's 
+license plate at a randomly generated level, while maintaining pointers between nodes to support efficient 
+lookups. The delete method removes a vehicle by updating forward pointers to bypass the target node. The search 
+method finds and returns a node with a matching license plate if it exists. The random_level method generates 
+random levels to maintain the probabilistic balance of the skip list. 
+"""
+
 import random
 
 class SkipListNode:
