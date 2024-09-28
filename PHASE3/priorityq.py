@@ -1,3 +1,12 @@
+""" 
+This code defines a PriorityQueue class that manages a queue of vehicles based on their priority using 
+a max-heap (implemented with heapq). The add_to_queue method adds vehicles to the priority queue with a 
+given priority (higher priority vehicles are processed first). It also tracks the order of vehicle 
+addition using a counter to break ties between vehicles with the same priority. The assign_parking 
+method pops the highest-priority vehicle from the queue and attempts to park it in a given ParkingLot 
+instance using its park_vehicle method. 
+"""
+
 import heapq
 
 class PriorityQueue:
