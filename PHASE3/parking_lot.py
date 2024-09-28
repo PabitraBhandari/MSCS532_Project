@@ -1,3 +1,13 @@
+""" 
+This code defines a ParkingLot class that uses three data structures to manage parked vehicles: 
+a CustomHashTable for fast vehicle lookup, a MemoryPool for efficient node management, and a 
+SkipList for maintaining an ordered list of parked vehicles. The park_vehicle method first 
+checks if the parking lot is full or if the vehicle is already parked, and if not, it retrieves 
+a new node from the memory pool, stores it in the hash table, and adds the vehicle's license 
+plate to the skip list. The retrieve_vehicle method removes the vehicle from both the skip list 
+and the hash table, and returns the node to the memory pool, freeing up space in the parking lot. 
+"""
+
 import unittest
 from customhash import CustomHashTable
 from memorymnmt import MemoryPool
