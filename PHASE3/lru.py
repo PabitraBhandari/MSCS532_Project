@@ -1,3 +1,12 @@
+""" 
+This code implements an LRU (Least Recently Used) Cache using Python's OrderedDict. 
+The cache has a fixed capacity, and when a new item is added that exceeds the capacity, 
+the least recently used item (the first item in the dictionary) is removed. The get 
+method retrieves a value by key, updating the item’s position to mark it as recently used, 
+while the put method inserts or updates a key-value pair and, if needed, removes the oldest 
+entry to maintain the size limit. 
+"""
+
 from collections import OrderedDict
 
 class LRUCache:
